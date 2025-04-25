@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA Team and Player Generator</title>
+<link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+
+<h1>What's your team and who's your player?</h1>
+
+<h2>Get a Random Teams!</h2>
+<form action="/submit" method="POST">
+    <input type="submit" id="team" value="Generate Team">
+  </form>
+
+  <% if ((locals.team)&&(locals.player)) { %>
+        <h2>Your player is <%= player %> and </h2> <h2>you  will play in <%= team %></h2>
+    <% } %>
+
+
+</body>
+</html>
